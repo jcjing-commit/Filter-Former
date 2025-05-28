@@ -16,8 +16,10 @@ to a github repo when submitting to the MVTec Benchmark Server
 
 ## Introduction
 This repository contains the implementation of Filter-Former, a robust anomaly detection model based on the Augmented INP-Former. It aims to improve the accuracy and robustness of visual anomaly detection in industrial inspection and medical screening scenarios.
-The architecture of o Filter-Former method is illustrated in Figure 2. The blue modules represent the original structure of INP-Former, while the green modules highlight our improvements
-![alt text](assets/image.png)
+The architecture of o Filter-Former method is illustrated in Figure 2. The blue modules represent the original structure of INP-Former, while the green modules highlight our improvements.
+<p align="center">
+  <img src="assets/image.png"  width="100%">
+</p>
 ## Table of Contents
 - [Introduction](#introduction)
 - [Installation](#installation)
@@ -43,13 +45,13 @@ After downloading the dataset, place the extracted folder in the data directory 
 ## Training
 To train the Filter-Former model, run the following command:
 ```bash
-python train.py --phase train --data_path <Path to mvtec_ad_2> --save_dir <Path to save trained model> --total_epochs <Number of epochs to train> --batch_size <Batch size> 
+python filter_former.py --phase train --data_path <Path to mvtec_ad_2> --save_dir <Path to save trained model> --total_epochs <Number of epochs to train> --batch_size <Batch size> 
 ```
 You can modify the training configuration in the params as needed.
 ## Evaluation
 To evaluate the trained model on the test dataset, use the following command:
 ``` bash
-python train.py --phase test_public --data_path <Path to mvtec_ad_2> --save_dir <Path to save trained model> --total_epochs <Number of epochs to train> --batch_size 1
+python filter_former.py --phase test_public --data_path <Path to mvtec_ad_2> --save_dir <Path to save trained model> --total_epochs <Number of epochs to train> --batch_size 1
 ```
 Replace <path_to_trained_model> with the actual path to your trained model checkpoint.
 
