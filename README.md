@@ -20,7 +20,8 @@ The architecture of o Filter-Former method is illustrated in Figure 2. The blue 
 <p align="center">
   <img src="assets/image.png"  width="100%">
 </p>
-## Table of Contents
+
+## Contents
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Dataset](#dataset)
