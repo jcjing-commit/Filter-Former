@@ -18,7 +18,7 @@ to a github repo when submitting to the MVTec Benchmark Server
 This repository contains the implementation of Filter-Former, a robust anomaly detection model based on the Augmented INP-Former. It aims to improve the accuracy and robustness of visual anomaly detection in industrial inspection and medical screening scenarios.
 The architecture of o Filter-Former method is illustrated in Figure 2. The blue modules represent the original structure of INP-Former, while the green modules highlight our improvements.
 <p align="center">
-  <img src="assets/image.png"  width="100%">
+  <img src="assets/image.png"  width="80%">
 </p>
 
 ## Contents
